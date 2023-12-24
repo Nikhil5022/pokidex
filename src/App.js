@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Pokimon from './Pokimon';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body className="h-screen">
+
+      <nav className="bg-blue-500 text-white py-4 px-6 w-full text-3xl font-bold shadow-md flex items-center justify-between fixed top-0 z-50">
+        <span className="hidden lg:block">POKÉDEX</span>
+        <span className="lg:hidden mx-auto">POKÉDEX</span>
+      </nav>
+
+      <Pokimon />
+    </body>
   );
 }
 
